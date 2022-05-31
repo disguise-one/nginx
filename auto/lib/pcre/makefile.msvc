@@ -16,8 +16,8 @@ pcre.lib:
 	link -lib -out:pcre.lib -verbose:lib pcre_*.obj
 
 pcre.h:
-	cd $(PCRE)
+	cd $(PCRE)/src
 
-	copy /y pcre.h.generic pcre.h
+	copy /y pcre2.h.generic pcre2.h
 	copy /y config.h.generic config.h
-	copy /y pcre_chartables.c.dist pcre_chartables.c
+	copy /y pcre2_chartables.c.dist pcre2_chartables.c
